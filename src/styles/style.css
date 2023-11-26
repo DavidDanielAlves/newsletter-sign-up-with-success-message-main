@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: hsl(235, 18%, 26%);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.principal {
+  background-color: hsl(0, 0%, 100%);
+  width: 750px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  border-radius: 30px;
+}
+.principal div {
+  margin-left: 16px;
+}
+.principal div h1 {
+  font-weight: 700;
+  font-size: 42px;
+}
+.principal div .paragraph-main {
+  margin: 24px 0;
+}
+.principal div .list-about {
+  list-style-type: none;
+}
+.principal div .list-about .list-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.principal div .formulario .container-label {
+  font-size: 12px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.principal div .formulario .container-label span {
+  margin-right: 48px;
+  color: hsl(4, 100%, 67%);
+}
+.principal div .formulario #email {
+  width: 90%;
+  padding: 16px 0;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  border: 1px solid hsl(231, 7%, 60%);
+  cursor: pointer;
+}
+.principal div .formulario #email::-moz-placeholder {
+  color: hsl(231, 7%, 60%);
+}
+.principal div .formulario #email::placeholder {
+  color: hsl(231, 7%, 60%);
+}
+.principal div .formulario #email:hover {
+  border: 1px solid hsl(235, 18%, 26%);
+}
+.principal div .formulario #email:focus {
+  outline: none;
+}
+.principal div .formulario .input-submit-email {
+  background-color: hsl(235, 18%, 26%);
+  color: hsl(0, 0%, 100%);
+  width: 90%;
+  padding: 16px 0;
+  border-radius: 8px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+.principal div .formulario .input-submit-email:hover {
+  background-color: hsl(4, 100%, 67%);
+}
+.principal div .formulario .input-submit-email:active {
+  background-color: hsl(235, 18%, 26%);
+}
+.principal .principal-imagem {
+  width: 300px;
+}
+
+@media screen and (max-width: 790px) {
+  body {
+    background-color: hsl(0, 0%, 100%);
+  }
+  body .principal {
+    width: 100vw;
+    height: 100vh;
+    background-color: none;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    padding: 0;
+    border-radius: 0;
+  }
+  body .principal div {
+    margin: 0;
+    text-align: center;
+    padding: 16px;
+  }
+  body .principal div h1 {
+    font-size: 32px;
+    margin: 0;
+  }
+  body .principal div .paragraph-main {
+    margin: 16px 0;
+    width: 100%;
+  }
+  body .principal div .list-about {
+    margin-left: 8px;
+  }
+  body .principal div .formulario .container-label span {
+    margin: 0;
+  }
+  body .principal-imagem {
+    width: auto;
+  }
+}
+.input-error {
+  background-color: hsla(4, 100%, 67%, 0.236);
+  color: hsl(4, 100%, 67%);
+  border: 1px solid hsl(4, 100%, 67%) !important;
+}
+.input-error:focus {
+  outline: none;
+  border: 1px solid hsl(4, 100%, 67%) !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.subscribe {
+  width: 400px;
+  height: 450px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 48px;
+}
+.subscribe img {
+  align-self: flex-start;
+}
+.subscribe h1 {
+  font-size: 40px;
+}
+.subscribe p {
+  font-size: 12px;
+}
+.subscribe a {
+  width: 100%;
+  padding: 16px 0;
+  border-radius: 8px;
+  border: none;
+  background-color: hsl(235, 18%, 26%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+}
+.subscribe a:hover {
+  background-color: hsl(4, 100%, 67%);
+}
+.subscribe a:active {
+  background-color: hsl(235, 18%, 26%);
+}
+
+@media screen and (max-width: 790px) {
+  body .subscribe {
+    width: 80%;
+    height: 300px;
+    flex-direction: column;
+    gap: 32px;
+  }
+  body .subscribe img {
+    align-self: center;
+  }
+}/*# sourceMappingURL=style.css.map */
