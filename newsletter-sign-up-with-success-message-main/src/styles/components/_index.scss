@@ -1,0 +1,165 @@
+@import '../abstract/variaveis';
+
+.principal {
+    background-color: $white;
+    width: 750px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $tamanho-da-fonte $tamanho-da-fonte * 1.5;
+    border-radius: 30px;
+
+    div {
+        margin-left: $tamanho-da-fonte;
+
+        h1 {
+            font-weight: $fonte-negrito;
+            font-size: 42px;
+        }
+
+        .paragraph-main {
+            margin: $tamanho-da-fonte * 1.5 0;
+        }
+
+        .list-about {
+            list-style-type: none;
+
+            .list-item {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                margin-bottom: $tamanho-da-fonte;
+            }
+        }
+
+        .formulario {
+
+            .container-label {
+                font-size: 12px;
+                display: flex;
+                align-items: start;
+                justify-content: space-between;
+                font-weight: $fonte-negrito;
+                margin-bottom: $tamanho-da-fonte / 2;
+
+                span {
+                    margin-right: 48px;
+                    color: $tomato;
+                }
+            }
+
+            #email {
+                width: 90%;
+                padding: $tamanho-da-fonte 0;
+                border-radius: 8px;
+                margin-bottom: 16px;
+                padding-left: 16px;
+                border: 1px solid $grey;
+                cursor: pointer;
+
+                &::placeholder {
+                    color: $grey;
+                }
+
+                &:hover {
+                    border: 1px solid $charcoal-gray;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+
+            }
+
+            .input-submit-email {
+                background-color: $charcoal-gray;
+                color: $white;
+                width: 90%;
+                padding: $tamanho-da-fonte 0;
+                border-radius: 8px;
+                font-weight: $fonte-negrito;
+                border: none;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $tomato;
+                }
+
+                &:active {
+                    background-color: $charcoal-gray;
+                }
+            }
+
+        }
+    }
+
+
+    .principal-imagem {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+
+    body {
+        background-color: $white;
+        .principal {
+            width: 100vw;
+            height: 100vh;
+            background-color: none;
+            flex-direction: column-reverse;
+            justify-content: flex-end;
+            padding: 0;
+            border-radius: 0;
+
+            div {
+                margin: 0;
+                text-align: center;
+                padding: $tamanho-da-fonte;
+
+                h1 {
+                    font-size: 32px;
+                    margin: 0;
+                }
+
+                .paragraph-main {
+                    margin: $tamanho-da-fonte 0;
+                    width: 100%;
+                }
+
+                .list-about {
+                    margin-left: 8px;
+                }
+
+                .formulario {
+                    .container-label {
+                        span {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .principal-imagem {
+            width: auto;
+        }
+
+    }
+}
+
+.input-error {
+    background-color: $tomato-input-error;
+    color: $tomato;
+    border: 1px solid $tomato !important;
+
+    &:focus {
+        outline: none;
+        border: 1px solid $tomato !important;
+    }
+}
+
+.hidden {
+    display: none;
+}
